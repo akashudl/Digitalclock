@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import "../App.css";
 class DateandTime extends Component
 {   constructor() {
     super();
@@ -13,33 +13,13 @@ class DateandTime extends Component
 
     }
     render()
-    {  const diva={
-        width:"100%",
-        height:"100vh",
-        diplay:"flex",
-        flexDirection:"column",
-        justifyContent:"center",
-        alignItems:"center",
-
-    }
+    {  
         
         
-        const buttona=
-        {  
-            padding:"12px 20px",
-            background:"#9b59b6",
-            color :"white",
-            border :"2px solid #ecf0f1",
-            outline:"none",
-            borderRadius:"5px",
-            textTransform:"uppercase",
-            cursor:"pointer", 
-            alignItems:"center",
-        }
         return(
-            <div style={diva}>
+            <div className="diva">
                 <h1>{this.state.currentDateTime}</h1>
-                <button   onClick={this.updatedtime} style={buttona}>Get time</button>
+                <button   onClick={this.updatedtime} className="buttona">Get time</button>
                 </div>
 
         );
